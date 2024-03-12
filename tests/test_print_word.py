@@ -1,6 +1,7 @@
 import unittest
-from unittest.mock import patch
+
 from python_at_work.print_word import print_hello_world  # Relative import
+from unittest.mock import patch
 
 class TestPrintHelloWorld(unittest.TestCase):
   @patch('builtins.print')
