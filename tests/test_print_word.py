@@ -1,13 +1,8 @@
-import unittest
+import pytest
+import sys
+from python_at_work.print_word import print_hello_world
 
-from python_at_work.print_word import print_hello_world  # Relative import
-from unittest.mock import patch
-
-class TestPrintHelloWorld(unittest.TestCase):
-  @patch('builtins.print')
-  def test_print_message(self, mock_print):
+def test_print_word(capsys):
     print_hello_world()
-    mock_print.assert_called_with("Hello World!")
-
-if __name__ == '__main__':
-  unittest.main()
+    captured = capsys.readouterr()
+    assert captured.out == "Hello world!\n"
