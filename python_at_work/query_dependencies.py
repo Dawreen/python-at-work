@@ -1,5 +1,4 @@
 import logging
-import sys
 
 
 LOGGER = logging.getLogger(__name__)
