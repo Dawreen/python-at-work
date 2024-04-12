@@ -1,4 +1,5 @@
 .DS_Store
 poetry.lock
 query.sql
+config.json
 __pycache__/
