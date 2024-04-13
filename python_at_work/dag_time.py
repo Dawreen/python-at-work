@@ -1,6 +1,6 @@
 import logging
 import json
-import yaml
+import yaml # type: ignore
 
 
 LOGGER = logging.getLogger(__name__)
